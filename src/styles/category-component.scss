@@ -1,0 +1,48 @@
+@import "../App.scss";
+
+.category-component {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    a {
+        .card {
+            height: 120px;
+            overflow: hidden;
+            position: relative;
+            width: 50%;
+            float: left;
+            padding: 5px;
+            background: none;
+
+            img {
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            @media (min-width: 576px) {
+                height: 200px;
+                padding: 15px;
+            }
+
+            @media (min-width: 768px) {
+                height: 220px;
+                padding: 15px;
+            }
+
+            @media (min-width: 992px) {
+                height: 300px;
+                padding: 15px;
+            }
+
+            @media (min-width: 1280px) {
+                height: 400px;
+                padding: 15px;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

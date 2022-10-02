@@ -1,0 +1,231 @@
+@import "../App.scss";
+
+.shopping-cart {
+    .cart-header {
+        h5 {
+            text-transform: uppercase;
+            font-weight: 300;
+            word-spacing: 3px;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif;
+
+            @media (max-width: 576px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    // Product Table
+    .product-table {
+        thead {
+            border-bottom: 1px solid #dfdfdf;
+
+            tr {
+                td {
+                    padding-bottom: 10px;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #000;
+                    font-weight: 700;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid #dfdfdf;
+
+                td {
+                    // min-width: 100px;
+                    padding: 20px 8px;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #555;
+                    font-weight: 300;
+                    font-family: 'Roboto', sans-serif;
+
+                    .img-box {
+                        width: 80px;
+                        height: 80px;
+                        overflow: hidden;
+
+                        img {
+                            min-width: 100%;
+                            min-height: 100%;
+                        }
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                    small {
+                        cursor: pointer;
+                        font-size: 13px;
+                        text-transform: capitalize;
+                        font-family: 'Roboto', sans-serif;
+                        text-decoration: underline;
+                    }
+
+                    small:hover {
+                        color: $secondary-color;
+                    }
+
+                    .btn {
+                        border-radius: 0;
+                        background: none;
+                        padding: 4px 8px;
+                        border: 1px solid #dfdfdf;
+                    }
+                }
+            }
+        }
+    }
+
+    // Coupon Box
+    .coupon-box {
+        width: 250px;
+
+        p {
+            font-size: 13px;
+            margin-bottom: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-control {
+            height: 34px;
+            color: #000;
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-control:focus {
+            border: 1px solid $secondary-color;
+        }
+
+        .btn {
+            height: 34px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            background: $secondary-color;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    // Cart Total
+    .cart-total {
+        .card {
+            .title {
+                h6 {
+                    color: #555;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+
+            .table {
+                tr {
+                    td {
+                        color: #555;
+                        font-size: 13px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+            }
+
+            .btn {
+                color: #fff;
+                font-weight: 700;
+                font-weight: 900;
+                font-size: 13px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                background: $secondary-color;
+            }
+        }
+    }
+
+    // Payment Security Message
+    .payment-security-message {
+        .title {
+            h6 {
+                color: #555;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+
+        p {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+
+                .img-box {
+                    width: 60px;
+                    height: 35px;
+                    border: 1px solid #01018fa1;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    margin-right: 5px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Empty Box
+    .empty-cart {
+        img {
+            width: 230px;
+
+            @media (min-width: 992px) {
+                width: 300px;
+            }
+        }
+
+        h5 {
+            font-weight: 700;
+            color: $secondary-color;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .btn {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 7px 20px;
+            background: $secondary-color;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @media (min-width: 992px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+}

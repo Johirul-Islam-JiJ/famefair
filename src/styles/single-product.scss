@@ -1,0 +1,370 @@
+@import "../App.scss";
+
+.single-product {
+    background: #f2f3f5;
+
+    .magnifiySmallImage {
+        @media (max-width: 576px) {
+            margin: auto;
+        }
+    }
+
+    .img-list {
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 0;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                overflow: hidden;
+                border: 1px solid #dfdfdf;
+                cursor: pointer;
+
+                img {
+                    min-width: 70px;
+                    min-height: 70px;
+                }
+            }
+        }
+    }
+
+    .product-info {
+        h4 {
+            font-weight: 700;
+            text-transform: capitalize;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h6 {
+            font-size: 14px;
+            font-weight: 700;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .price_policy {
+            margin-top: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-top: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf;
+
+            h3 {
+                margin-bottom: 0;
+                margin-top: 5px;
+                font-weight: 900;
+                font-family: "Roboto", sans-serif;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 7px;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        .sizes {
+            margin-top: 25px;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                margin-left: 45px;
+
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    height: 33px;
+                    min-width: 40px;
+                    position: relative;
+                    margin-left: 5px;
+                    cursor: pointer;
+                    border: 1px solid #dfdfdf;
+
+                    p {
+                        padding: 5px 8px;
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        margin-right: 3px;
+                        font-weight: 700;
+                        font-family: "Roboto", sans-serif;
+                    }
+
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.4s all;
+                        background: $secondary-color;
+                        border: 1px solid $secondary-color;
+
+                        p {
+                            color: #fff;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .colors {
+            margin-top: 25px;
+
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    width: 40px;
+                    height: 35px;
+                    margin-right: 3px;
+                    position: relative;
+                    cursor: pointer;
+
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.4s all;
+                    }
+                }
+            }
+        }
+
+        .cart-option {
+            margin-top: 20px;
+
+            // padding-left: 75px;
+
+            .btn {
+                background: none;
+                padding: 4px 8px;
+                border: 1px solid #dfdfdf;
+            }
+
+            .cart-btn {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+                padding: 6.5px 20px;
+                background: $secondary-color;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+
+    // Description
+    .description {
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        .nav-tabs {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-top: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf;
+
+            .nav-item {
+                color: #000;
+                font-size: 15px;
+                font-weight: 700;
+                border: 0 !important;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .active {
+                border: 0 !important;
+                background: none;
+                color: #555;
+            }
+
+            .nav-link:focus {
+                border: 0 !important;
+                outline: none;
+            }
+        }
+
+        .tab-content {
+            padding: 15px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .product-feature {
+            h6 {
+                font-size: 17px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .d-flex {
+                margin-bottom: 15px;
+
+                .box-1 {
+                    width: 100px !important;
+
+                    p {
+                        color: #000;
+                        font-size: 13px;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                        font-family: "Roboto", sans-serif;
+                    }
+                }
+
+                .flex-fill {
+                    p {
+                        font-size: 15px;
+                        margin-bottom: 5px;
+                        font-family: "Roboto", sans-serif;
+                    }
+
+                    .color-box {
+                        width: 30px;
+                        height: 30px;
+                        float: left;
+                    }
+
+                    .size-box {
+                        min-width: 20px;
+                        float: left;
+                        color: #000;
+                        font-size: 13px;
+                        margin-bottom: 0;
+                        font-weight: 900;
+                        text-align: center;
+                        font-family: "Roboto", sans-serif;
+                    }
+
+                    .tags {
+                        width: 100%;
+
+                        .btn {
+                            float: left;
+                            background: $secondary-color;
+                            margin-right: 4px;
+                            padding: 2px 10px;
+
+                            p {
+                                color: #fff;
+                                margin-bottom: 0;
+                                font-weight: 500;
+                                text-transform: capitalize;
+                                font-family: "Roboto", sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .reviews {
+            h5 {
+                font-size: 15px;
+                font-weight: 700;
+                font-family: "Roboto", sans-serif;
+            }
+
+            h6 {
+                font-size: 14px;
+                font-family: "Roboto", sans-serif;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.8rem;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .yellow {
+                color: $primary-color;
+            }
+
+            form {
+                .ratings {
+                    .icons {
+                        cursor: pointer;
+                        color: #555;
+                        margin-bottom: 5px;
+                    }
+
+                    .color-yellow {
+                        color: $primary-color;
+                    }
+                }
+
+                small {
+                    padding-left: 3px;
+                    font-family: "Roboto", sans-serif;
+                }
+
+                .form-control {
+                    font-size: 14px;
+                    font-family: "Roboto", sans-serif;
+                }
+
+                .form-control:focus {
+                    border: 1px solid $secondary-color;
+                }
+
+                .btn {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    padding: 7px 20px;
+                    background: $secondary-color;
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+        }
+    }
+
+    // FourOFour
+    .four-o-four {
+        img {
+            width: 230px;
+
+            @media (min-width: 992px) {
+                width: 300px;
+            }
+        }
+
+        h5 {
+            font-weight: 700;
+            color: $secondary-color;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .btn {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 7px 20px;
+            background: $secondary-color;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+
+    // Related Products
+    .related-products {
+        h6 {
+            font-weight: 700;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}

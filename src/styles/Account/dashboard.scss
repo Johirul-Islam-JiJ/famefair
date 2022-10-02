@@ -1,0 +1,33 @@
+@import "../../App.scss";
+
+.dashboard {
+    .header {
+        margin-bottom: 16px;
+
+        h5 {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .body {
+        p {
+            color: #555;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+
+            span {
+                color: #000;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        .btn {
+            font-size: 15px;
+            font-weight: 900;
+            background: $secondary-color;
+        }
+    }
+}

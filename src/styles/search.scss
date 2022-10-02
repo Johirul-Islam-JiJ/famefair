@@ -1,0 +1,150 @@
+@import "../App.scss";
+
+.search-box {
+    position: relative;
+
+    form {
+        position: relative;
+
+        .form-control {
+            border: 0;
+            height: 34px;
+            font-size: 15px;
+            padding-right: 35px;
+            font-family: 'Roboto', sans-serif;
+            background: #dfdfdf85;
+            border-radius: 0px;
+
+            @media (min-width: 992px) {
+                height: 35px;
+                color: #000;
+                background: none;
+                border: 1px solid #dfdfdf;
+            }
+        }
+
+        ::placeholder {
+            @media (min-width: 992px) {
+                color: #000;
+            }
+        }
+
+        .error {
+            border: 1px solid #fc5632;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #555;
+
+            @media (min-width: 992px) {
+                color: #000;
+            }
+        }
+    }
+
+    // Suggest Box
+    .suggest-box {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+        min-height: 40px;
+        background: #fff;
+        z-index: 9999;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid #dfdfdf85;
+
+        // Loading SCSS
+        .search-loading {
+            width: 100%;
+            height: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                overflow: hidden;
+                animation-delay: 1s;
+            }
+        }
+
+        // Search Result
+        .result {
+            cursor: pointer;
+            padding: 12px 15px;
+        }
+
+        .result:hover {
+            background: #dfdfdf85;
+        }
+
+        p {
+            font-size: 15px;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+
+// Loading SCSS
+$color-4: #eead68;
+$color-3: #eec368;
+$color-2: #eece68;
+$color-1: #eed968;
+$color-5: #ee8c68;
+
+$color: $color-1, $color-2, $color-3, $color-4, $color-5;
+
+@mixin anim {
+    @keyframes scale {
+        0% {
+            transform: scale(1);
+        }
+
+        50%,
+        75% {
+            transform: scale(2.5);
+        }
+
+        78%, 100% {
+            opacity: 0;
+        }
+    }
+}
+
+@for $i from 1 through 5 {
+    .loading-item-#{$i} {
+        width: 12px;
+        height: 12px;
+        background: #f583a1;
+        border-radius: 50%;
+
+        @include anim;
+
+        background-color: nth($color, $i);
+        margin: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: nth($color, $i);
+            opacity: 0.7;
+            animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+            animation-delay: 200ms * $i;
+            transition: 0.5s all ease;
+            transform: scale(1);
+        }
+    }
+}

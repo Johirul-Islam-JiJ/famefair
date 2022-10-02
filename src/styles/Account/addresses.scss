@@ -1,0 +1,105 @@
+@import "../../App.scss";
+
+// Index
+.address-index {
+    .header {
+        margin-bottom: 16px;
+
+        h5 {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .body {
+        p {
+            color: #555;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .title {
+            h5 {
+                text-transform: uppercase;
+                font-size: 15px;
+                margin-bottom: 0;
+                font-weight: 900;
+                margin-top: 7px;
+                color: #555;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .btn {
+                font-weight: 200;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+
+        .content {
+            p {
+                color: #555;
+                font-size: 14px;
+                margin-bottom: 2px;
+                font-style: italic;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+}
+
+// Edit
+.edit {
+    .header {
+        margin-bottom: 16px;
+
+        h5 {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .body {
+        .title {
+            h5 {
+                text-transform: capitalize;
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-weight: 900;
+                margin-top: 7px;
+                color: #555;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+
+        form {
+            p {
+                color: #555;
+                font-size: 13px;
+                margin-bottom: 5px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .form-control {
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .form-control:focus {
+                border: 1px solid $secondary-color;
+            }
+
+            .btn {
+                font-size: 13px;
+                font-weight: 700;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+}

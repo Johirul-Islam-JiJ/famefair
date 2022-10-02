@@ -1,0 +1,190 @@
+@import "../App.scss";
+
+.checkout {
+    .checkout-header {
+        h5 {
+            text-transform: uppercase;
+            font-weight: 300;
+            word-spacing: 3px;
+            margin-bottom: 30px;
+            font-family: "Roboto", sans-serif;
+
+            @media (max-width: 576px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    // User Details
+    .user-details-column {
+        .title {
+            h6 {
+                color: #555;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        .input-fields {
+            .form-group {
+                p {
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                    font-family: "Roboto", sans-serif;
+                }
+
+                .form-control {
+                    height: 35px;
+                    color: #000;
+                    border-radius: 0;
+                    font-size: 13px;
+                    font-family: "Roboto", sans-serif;
+                }
+
+                .form-control:focus {
+                    border: 1px solid $secondary-color;
+                }
+
+                .form-check {
+                    .form-check-label {
+                        color: #555;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        font-family: "Roboto", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    // Order Details
+    .order-details {
+        .title {
+            h6 {
+                color: #555;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        // Cart Products
+        .cart-products {
+            .product-single {
+                padding-top: 8px;
+                padding-bottom: 8px;
+
+                p {
+                    margin-bottom: 0;
+                    color: rgba(85, 85, 85, 0.877);
+                    font-size: 14px;
+                    line-height: 10px;
+                    font-family: "Roboto", sans-serif;
+                }
+
+                small {
+                    font-size: 11px;
+                    color: rgba(85, 85, 85, 0.877);
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+        }
+
+        // Sub Total
+        .sub-total {
+            padding-top: 5px;
+            padding-bottom: 8px;
+            margin-top: 10px;
+
+            p {
+                margin-bottom: 0;
+                color: #000;
+                font-size: 14px;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        // Shipping
+        .shipping {
+            p {
+                margin-bottom: 10px;
+                color: rgba(85, 85, 85, 0.877);
+                font-size: 14px;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .form-check {
+                .form-check-label {
+                    color: rgba(85, 85, 85, 0.877);
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+        }
+
+        // Delivery Method
+        .delivery-method {
+            .form-check {
+                .form-check-label {
+                    color: rgba(85, 85, 85, 0.877);
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+
+            p {
+                margin-bottom: 10px;
+                color: rgba(85, 85, 85, 0.877);
+                font-size: 14px;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        // Place button
+        .order-place-button {
+            font-weight: 900;
+            font-size: 14px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background: #dc3545;
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+
+    // Empty Box
+    .empty-cart {
+        img {
+            width: 230px;
+
+            @media (min-width: 992px) {
+                width: 300px;
+            }
+        }
+
+        h5 {
+            font-weight: 700;
+            color: $secondary-color;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .btn {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 7px 20px;
+            background: $secondary-color;
+            font-family: "Roboto", sans-serif;
+        }
+
+        @media (min-width: 992px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+}

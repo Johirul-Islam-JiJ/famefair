@@ -1,0 +1,174 @@
+@import "../../App.scss";
+
+.campaign {
+    // Header
+    .header {
+        .card {
+            height: 150px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+
+            img {
+                width: 100%;
+                min-height: 200px;
+                filter: blur(60px);
+                -webkit-filter: blur(60px);
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                h3 {
+                    color: #fff;
+                    font-weight: 900;
+                    text-transform: capitalize;
+                    font-family: 'Roboto', sans-serif;
+
+                    @media (max-width: 992px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            @media (min-width: 768px) {
+                height: 200px;
+            }
+        }
+    }
+
+    // Filter
+    .filter {
+        .card {
+            width: 380px;
+            max-width: 100%;
+            margin-left: auto;
+
+            .form-control {
+                color: #000;
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 5px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .form-control:focus {
+                border: 1px solid $secondary-color;
+            }
+
+            .error {
+                border: 1px solid brown !important;
+            }
+
+            .btn {
+                color: #fff;
+                font-size: 14px;
+                font-weight: 900;
+                border-radius: 5px;
+                background: $secondary-color;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+
+    // Products
+    .products {
+        .campaign-product-card {
+            float: left;
+            width: 100%;
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+
+                .card-body {
+                    padding: 0;
+                    background: #fff;
+                    transition: 0.3s all;
+                    border: 1px solid #dfdfdf;
+
+                    .img-box {
+                        overflow: hidden;
+                        height: 200px;
+                        position: relative;
+
+                        img {
+                            min-width: 100%;
+                            min-height: 100%;
+                        }
+
+                        .offer-reason {
+                            position: absolute;
+                            right: 8px;
+                            bottom: 8px;
+                            padding: 5px 8px;
+                            border-radius: 3px;
+                            background: rgba(255, 255, 255, 0.692);
+
+                            p {
+                                color: $secondary-color;
+                                font-size: 14px;
+                                margin-bottom: 0;
+                                font-weight: 900;
+                                text-transform: capitalize;
+                                font-family: 'Roboto', sans-serif;
+                            }
+                        }
+
+                        @media (min-width: 576px) {
+                            height: 200px;
+                        }
+
+                        @media (min-width: 700px) {
+                            height: 300px;
+                        }
+
+                        @media (min-width: 992px) {
+                            height: 350px;
+                        }
+                    }
+
+                    .content {
+                        padding: 15px;
+
+                        h6 {
+                            color: #555;
+                            font-size: 14px;
+                            font-weight: 600;
+                            font-family: 'Roboto', sans-serif;
+                        }
+
+                        p {
+                            color: #000;
+                            font-size: 14px;
+                            margin-bottom: 0;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                    }
+                }
+            }
+
+            .card-body:hover {
+                // border: 1px solid #fff;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            }
+
+            @media (min-width: 410px) {
+                width: 50%;
+            }
+
+            @media (min-width: 768px) {
+                width: 33.33%;
+            }
+
+            @media (min-width: 992px) {
+                width: 25%;
+                padding: 15px;
+            }
+        }
+    }
+}

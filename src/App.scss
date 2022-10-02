@@ -1,0 +1,85 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+$primary-color: #b5074a;
+$secondary-color: #076ab5;
+$danger-color: brown;
+
+/* Flex Box */
+
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-column {
+    -ms-flex-direction: column !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    flex-direction: column !important;
+}
+
+// Spin Icon
+.spin {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Empty Box
+.empty-box {
+    img {
+        width: 230px;
+
+        @media (min-width: 992px) {
+            width: 300px;
+        }
+    }
+
+    h5 {
+        font-weight: 700;
+        color: $secondary-color;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .btn {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 7px 20px;
+        background: $secondary-color;
+        font-family: "Roboto", sans-serif;
+    }
+
+    @media (min-width: 992px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+// Custom Container
+.container {
+    @media (min-width: 1500px) {
+        max-width: 1450px;
+    }
+}

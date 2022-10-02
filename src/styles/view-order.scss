@@ -1,0 +1,172 @@
+@import "../App.scss";
+
+.order-view-modal {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        overflow-y: auto;
+        background: rgba(117, 117, 117, 0.459);
+
+        .custom-dialog {
+            position: relative;
+            width: 92vw auto;
+            margin: 10px;
+
+            .card {
+                border-radius: 8px;
+                overflow: hidden;
+                width: 100%;
+                margin: 0 auto;
+
+                .card-header {
+                    border-top-right-radius: 8px;
+                    border-top-left-radius: 8px;
+                    padding-top: 15px;
+                    padding-bottom: 5px;
+
+                    h6 {
+                        font-weight: 700;
+                        margin-top: 8px;
+                        margin-bottom: 7px;
+                        text-transform: uppercase;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                    .btn {
+                        padding: 2px;
+                        width: 35px;
+                        height: 35px;
+                        background: #dfdfdf;
+                    }
+
+                    .boder {
+                        height: 1px;
+                        background: #dfdfdf;
+                    }
+                }
+
+                .card-body {
+                    // Short info
+                    .short-info {
+                        width: 250px;
+                        padding: 15px;
+                        margin: auto;
+                        text-align: center;
+                        border: 1px solid #dfdfdf;
+
+                        p {
+                            color: #000;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                            font-family: 'Roboto', sans-serif;
+
+                            span {
+                                color: #555;
+                            }
+                        }
+
+                        @media (min-width: 576px) {
+                            width: 300px;
+                        }
+                    }
+
+                    // Message
+                    .message {
+                        margin-bottom: 15px;
+                        padding: 10px 15px;
+
+                        p {
+                            color: #fff;
+                            font-size: 13px;
+                            margin-bottom: 0;
+                            margin-top: 3px;
+                        }
+                    }
+
+                    // Order Details
+                    .order-details {
+                        .table {
+                            thead {
+                                tr {
+                                    td {
+                                        border-bottom: 1px solid #dfdfdf;
+
+                                        p {
+                                            font-size: 13px;
+                                            font-weight: 700;
+                                            margin-bottom: 0;
+                                            text-transform: uppercase;
+                                            font-family: 'Roboto', sans-serif;
+                                        }
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        padding-bottom: 4px;
+
+                                        p {
+                                            color: #555;
+                                            font-size: 14px;
+                                            margin-bottom: 0;
+                                            font-family: 'Roboto', sans-serif;
+                                        }
+
+                                        .size {
+                                            font-size: 13px;
+                                            font-weight: 900;
+                                            text-transform: uppercase;
+                                            font-family: 'Roboto', sans-serif;
+                                        }
+                                    }
+                                }
+
+                                .boder {
+                                    td {
+                                        padding-top: 8px;
+                                        padding-bottom: 8px;
+                                        border-bottom: 1px solid #dfdfdf;
+
+                                        p {
+                                            color: #000;
+                                            font-size: 14px;
+                                            margin-bottom: 0;
+                                            font-family: 'Roboto', sans-serif;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Addresses
+                    .addresses {
+                        p {
+                            color: #555;
+                            font-size: 14px;
+                            margin-bottom: 0;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                    }
+                }
+            }
+
+            @media (min-width: 576px) {
+                width: 550px;
+                margin: 20px auto;
+            }
+
+            @media (min-width: 768px) {
+                width: 650px;
+                margin: 20px auto;
+            }
+        }
+    }
+}
+

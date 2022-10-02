@@ -1,0 +1,223 @@
+@import "../App.scss";
+
+.custom-navbar {
+    z-index: 99;
+    width: 100%;
+    padding: 15px 0px;
+    background: #fff;
+    transition: 0.25s !important;
+
+    img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    // Desktop Menu / Page Links
+    .page-links {
+        position: relative;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            padding-top: 4px;
+
+            li {
+                list-style: none;
+                display: inline;
+
+                a, .btn {
+                    color: #000;
+                    font-weight: 700;
+                    font-size: 13px;
+                    padding: 6px 10px;
+                    margin: 0px 10px;
+                    transition: 0.4s all;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                a:hover {
+                    color: $secondary-color;
+                }
+
+                .btn:hover {
+                    color: $secondary-color;
+                }
+
+                .is-Active {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        .custom-mega-menu {
+            position: absolute;
+            background: #fff;
+            z-index: 99;
+            border-radius: 6px;
+            margin: auto;
+
+            @media (min-width: 992px) {
+                left: 0;
+                width: 850px;
+                top: 50px;
+                display: none;
+                transition: 0.4s all;
+            }
+        }
+
+        // Open Mega Menu
+        .open {
+            display: block !important;
+        }
+    }
+
+    .cart-box {
+        position: relative;
+
+        .cart-btn {
+            margin-top: 3px;
+            padding: 5px 6px;
+            background: #dfdfdf;
+        }
+
+        small {
+            color: $secondary-color;
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            font-weight: 700;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .social-box {
+        .cart-btn {
+            height: 36px;
+            width: 36px;
+        }
+    }
+
+    .bar-btn {
+        margin-top: 3px;
+        background: #dfdfdf;
+    }
+
+    @media (min-width: 992px) {
+        padding: 20px 0px;
+    }
+}
+
+/* Navbar fixed after scroll */
+
+.scrolled {
+    position: fixed;
+    animation: moveDown 0.5s ease-in-out;
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-5rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0rem);
+    }
+}
+
+/* End Navbar fixed after scroll */
+
+// Mobile Menu
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+.show-backdrop {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    overflow-y: auto;
+    transition: 0.4s all;
+    z-index: 99;
+
+    .menu-body {
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+
+                a, .btn {
+                    color: #000;
+                    font-weight: 700;
+                    font-size: 13px;
+                    padding: 6px 10px;
+                    transition: 0.4s all;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                }
+
+                .is-Active {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.open-mobile-menu {
+    left: 0 !important;
+}
+
+.hide-mobile-menu {
+    left: -100% !important;
+}
+
+// Rotate arrow Icon down
+.rotate-down {
+    transition: 0.4s all;
+    transform: rotate(90deg);
+}
+
+// Rotate Arrow icon right
+.rotate-right {
+    transition: 0.4s all;
+    transform: rotate(0deg);
+}
+
+// End Mobile Menu

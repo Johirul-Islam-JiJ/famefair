@@ -1,0 +1,94 @@
+@import "../App.scss";
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #dfdfdf59;
+
+    .col-12 {
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+        }
+
+        img {
+            width: 70px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 20px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: inline;
+
+                a {
+                    color: #00acee;
+                    padding: 5px 8px;
+                }
+            }
+        }
+
+        h5 {
+            color: #000;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            color: #000;
+            font-weight: 400;
+            font-size: 13px;
+            padding: 4px 10px;
+            border: 1px solid #dfdfdf;
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 5px;
+            transition: 0.3s all;
+        }
+
+        .btn:hover {
+            background: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+
+    .boder {
+        height: 1px;
+        background: #dfdfdf;
+    }
+
+    form {
+        .form-control {
+            border: 1px solid #dfdfdf;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .danger-border {
+            border: 1px solid brown;
+        }
+
+        .btn {
+            color: #000;
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            background: $primary-color;
+            border: 0 !important;
+            font-weight: 900 !important;
+            text-transform: uppercase !important;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}

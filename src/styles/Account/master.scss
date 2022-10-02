@@ -1,0 +1,61 @@
+@import "../../App.scss";
+
+.account-master {
+    // Mobile Page Links
+    .page-links-in-button-mobile {
+        text-align: center;
+
+        .btn {
+            margin: 5px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .is-Active {
+            color: #fff;
+            background: $secondary-color;
+        }
+    }
+
+    // Side Menu
+    .side-menu {
+        min-width: 270px !important;
+        padding-top: 50px;
+
+        a, .btn {
+            font-size: 13px;
+            display: block;
+            color: #555;
+            transition: 0.4s all;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-decoration: none;
+            border-bottom: 1px solid #dfdfdf;
+            padding-left: 0;
+
+            @media (max-width: 992px) {
+                padding-left: 15px;
+            }
+        }
+
+        a:hover {
+            color: $danger-color;
+        }
+
+        .is-Active {
+            color: $danger-color;
+        }
+
+        .btn {
+            text-align: left;
+        }
+
+        .btn:hover {
+            color: $danger-color;
+        }
+    }
+}

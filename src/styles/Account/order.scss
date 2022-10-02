@@ -1,0 +1,66 @@
+@import "../../App.scss";
+
+.order-index {
+    .header {
+        margin-bottom: 16px;
+
+        h5 {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+
+    .body {
+        .table {
+            thead {
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: "Roboto", sans-serif;
+
+                tr {
+                    td {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #dfdfdf;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        border-bottom: 1px solid #dfdfdf;
+
+                        p {
+                            color: #000;
+                            font-size: 12px;
+                            font-weight: 400;
+                            margin-top: 4px;
+                            margin-bottom: 0;
+                            text-transform: uppercase;
+                            font-family: "Roboto", sans-serif;
+                        }
+
+                        .btn {
+                            font-size: 10px;
+                            padding: 4px 15px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            font-family: "Roboto", sans-serif;
+                        }
+
+                        .view-btn {
+                            color: #fff;
+                            margin-right: 5px;
+                            background: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

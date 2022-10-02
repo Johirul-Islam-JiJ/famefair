@@ -1,0 +1,154 @@
+@import "../App.scss";
+
+.order-status-modal {
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        overflow-y: auto;
+        background: rgba(117, 117, 117, 0.459);
+
+        .custom-dialog {
+            position: relative;
+            width: 92vw auto;
+            margin: 10px;
+
+            .card {
+                border-radius: 8px;
+                overflow: hidden;
+                width: 100%;
+                margin: 0 auto;
+
+                .card-header {
+                    border-top-right-radius: 8px;
+                    border-top-left-radius: 8px;
+                    padding-top: 15px;
+
+                    h5 {
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        font-weight: 900;
+                        font-family: "Roboto", sans-serif;
+                    }
+
+                    .btn {
+                        padding: 2px;
+                        width: 35px;
+                        height: 35px;
+                        background: #dfdfdf;
+                    }
+
+                    .boder {
+                        height: 1px;
+                        background: #dfdfdf;
+                    }
+                }
+
+                .card-body {
+                    img {
+                        margin: auto;
+                        width: 40px !important;
+                        height: 40px !important;
+                    }
+                    h6 {
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        font-family: "Roboto", sans-serif;
+                    }
+
+                    .order-details {
+                        h6 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            text-transform: capitalize;
+                            font-family: "Roboto", sans-serif;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            margin-bottom: 3px;
+                            text-transform: capitalize;
+                            font-family: "Roboto", sans-serif;
+                        }
+                    }
+
+                    .products {
+                        .table {
+                            thead {
+                                tr {
+                                    td {
+                                        border-bottom: 1px solid #dfdfdf;
+
+                                        p {
+                                            font-size: 13px;
+                                            font-weight: 700;
+                                            margin-bottom: 0;
+                                            text-transform: capitalize;
+                                            font-family: "Roboto", sans-serif;
+                                        }
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        p {
+                                            font-size: 13px;
+                                            margin-bottom: 0;
+                                            font-family: "Roboto", sans-serif;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-footer {
+                    padding-bottom: 20px;
+
+                    .btn {
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border-radius: 3px;
+                        background: #dfdfdf;
+                        font-family: "Roboto", sans-serif;
+                    }
+                }
+            }
+
+            @media (min-width: 576px) {
+                width: 550px;
+                margin: 20px auto;
+            }
+
+            @media (min-width: 768px) {
+                width: 650px;
+                margin: 20px auto;
+            }
+        }
+    }
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #section-to-print,
+    #section-to-print * {
+        visibility: visible;
+    }
+}

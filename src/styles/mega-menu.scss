@@ -1,0 +1,30 @@
+@import "../App.scss";
+
+.mega-menu {
+    padding: 30px 20px;
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h5 {
+        font-weight: 700;
+        color: $secondary-color;
+        text-transform: capitalize;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+        color: #000;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 3px;
+        text-transform: capitalize;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a:hover {
+        color: $secondary-color;
+    }
+}
